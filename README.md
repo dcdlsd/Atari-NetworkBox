@@ -22,7 +22,8 @@ autonome.
 
 ## Démarrage rapide
 
-1. Imprimez le boîtier de `case_stl/` si souhaité.
+1. Imprimez le boîtier de `case_stl/` si souhaité, puis suivez le
+   [montage en photos](docs/ASSEMBLY.md) pour placer le Pico et les modules.
 2. Réalisez le câblage décrit dans [WIRING.md](WIRING.md).
 3. Flashez **un seul** fichier `.uf2` depuis `firmware/` :
    - `...WIFI_only_v1.0.5.uf2` : Wi-Fi uniquement ;
@@ -73,8 +74,10 @@ Validated features: HTTP with HighWire, FTP with Litchi, DNS, ping and TCP/IP.
 Three ready-to-flash firmwares are supplied: Wi-Fi only, W5500 Ethernet only,
 and a combined Wi-Fi + Ethernet version.
 
-See [WIRING.md](WIRING.md) for hardware, `docs/STING_SETUP.md` for Atari
-configuration and `docs/WIFI_SETUP.md` for Wi-Fi setup.
+See the [photo assembly guide](docs/ASSEMBLY.md) for the Pico and module
+positions, [WIRING.md](WIRING.md) for hardware connections,
+`docs/STING_SETUP.md` for Atari configuration and `docs/WIFI_SETUP.md` for
+Wi-Fi setup.
 
 ## License
 
