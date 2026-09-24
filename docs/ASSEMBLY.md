@@ -8,21 +8,29 @@ les logements imprimés avant de brancher les fils. Pour les connexions
 [WIRING.md](../WIRING.md)** : la couleur des fils Dupont n'indique pas leur
 fonction.
 
-### 1. Repérer les guides du Pico
+### 1. Placer le Pico, puis ses rails de maintien
 
-Les deux longues glissières parallèles maintiennent les bords de la carte
-Raspberry Pi Pico 2 W. La photo ci-dessous montre leur emplacement dans le
-boîtier vide.
+Les deux longues pièces imprimées sont des rails amovibles : elles se glissent
+**derrière le Raspberry Pi Pico 2 W** pour le maintenir. La photo ci-dessous
+montre leur emplacement dans le boîtier vide.
 
 ![Glissières vues dans le boîtier vide](../images/assembly/case-internal-guides.jpg)
 
-Cette vue rapprochée montre l'extrémité par laquelle la carte se glisse.
+Cette vue rapprochée montre les rails avant leur mise en place.
 
 ![Extrémité des glissières du Pico](../images/assembly/pico-slide-rails.jpg)
 
-Présentez le Pico entre les deux rails et faites-le coulisser doucement.
-Orientez son connecteur USB vers la découpe prévue dans le boîtier pour qu'il
-reste accessible une fois l'ensemble fermé. Vérifiez la position et l'accès
+Les vues 3D suivantes précisent le montage : Pico en jaune, rails en vert et
+boîtier transparent en bleu. Les flèches colorées sont les poignées de
+déplacement de 3D Builder, **pas** des indications du sens de montage.
+
+![Position du Pico et des rails, vue de face](../images/assembly/pico-retaining-rails-front.png)
+
+![Position du Pico et des rails, vue de côté](../images/assembly/pico-retaining-rails-side.png)
+
+Positionnez **d'abord le Pico** dans son logement, avec son connecteur USB
+orienté vers la découpe du boîtier. Faites **ensuite coulisser les deux rails
+derrière la carte** pour la retenir. Vérifiez la position, la tenue et l'accès
 USB **avant** d'enfoncer les connecteurs Dupont ; ne forcez pas si une carte
 ou un fil touche une paroi.
 
@@ -57,10 +65,13 @@ signaux GPIO/SPI du Pico restent en 3,3 V.
 
 ## English
 
-These photos show the actual prototype. The two long parallel rails hold the
-edges of the Raspberry Pi Pico 2 W. Slide the board in gently, with its USB
-connector facing the case opening so it remains accessible. Check clearance
-before attaching the Dupont wires.
+These photos show the actual prototype. Place the Raspberry Pi Pico 2 W in
+its recess **first**, with its USB connector facing the case opening. Then
+**slide the two removable rails behind the Pico** to hold it in place. The 3D
+views above show the Pico in yellow, the rails in green and the transparent
+case in blue. The coloured arrows are 3D Builder editing handles, **not**
+assembly directions. Check the fit and USB access before attaching the Dupont
+wires; do not force any part into place.
 
 In the assembled prototype, the MAX3232/DB9 module is on the left and the
 W5500/RJ45 module on the right when viewed from inside with the sockets facing
