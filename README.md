@@ -16,9 +16,21 @@ en SLIP à **19 200 bauds, 8N1** et peut accéder au réseau par Wi-Fi ou RJ45.
 - firmware Wi-Fi seul, RJ45/W5500 seul, ou Wi-Fi + RJ45 unifié ;
 - bouton de sélection et LEDs facultatives pour le firmware unifié.
 
-Le débit est volontairement limité par le port série d'un Atari STF d'origine
-(19 200 bauds). C'est normal : ce projet privilégie une liaison stable et
-autonome.
+## Vitesse série — important
+
+Les **trois firmwares UF2 fournis** (Wi-Fi seul, RJ45 seul et unifié) sont
+compilés avec une vitesse série **fixe de 19 200 bauds, 8N1**. Le port série
+utilisé par STinG sur l'Atari doit être réglé à la même vitesse.
+
+Ce réglage a été validé sur notre Atari STF. Il concerne la liaison série
+Atari–Pico, pas la vitesse du Wi-Fi ou de l'Ethernet, et ne constitue pas une
+limite matérielle du Pico.
+
+Brancher la NetworkBox sur un autre modèle d'Atari ne change pas automatiquement
+cette vitesse. Pour utiliser un port série plus rapide, il faudrait adapter
+et recompiler le firmware, puis valider le fonctionnement sur la machine et
+le port concernés. **Les vitesses supérieures ne sont pas validées dans cette
+version.**
 
 ## Démarrage rapide
 
@@ -73,6 +85,23 @@ connectivity.
 Validated features: HTTP with HighWire, FTP with Litchi, DNS, ping and TCP/IP.
 Three ready-to-flash firmwares are supplied: Wi-Fi only, W5500 Ethernet only,
 and a combined Wi-Fi + Ethernet version.
+
+## Serial speed — important
+
+All **three supplied UF2 firmwares** (Wi-Fi only, Ethernet only and combined)
+are compiled for a **fixed serial speed of 19,200 baud, 8N1**. The Atari serial
+port used by STinG must be configured to match.
+
+This setting has been tested on our Atari STF. It applies to the Atari–Pico
+serial link, not to Wi-Fi or Ethernet speed, and is not a hardware limitation
+of the Pico.
+
+Connecting the NetworkBox to another Atari model does not automatically change
+the serial speed. Using a faster serial port would require adapting and
+recompiling the firmware, then testing it on the relevant machine and port.
+**Higher serial speeds have not been validated in this version.**
+
+## Getting started
 
 See the [photo assembly guide](docs/ASSEMBLY.md) for the Pico and module
 positions, [WIRING.md](WIRING.md) for hardware connections,
